@@ -443,6 +443,11 @@ body {
 	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 0 14px 0 #ccc;
+	transition: all .3s linear;
+}
+
+.team-card:hover {
+	transform: scale(1.1);
 }
 
 .team-card-link {
