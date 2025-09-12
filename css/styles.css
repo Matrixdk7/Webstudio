@@ -124,7 +124,6 @@ body {
 }
 
 .header-burger+.header-burger-cover {
-	/* width: calc((100vw - 1200px) / 2); */
 	width: 300px;
 	height: 100%;
 	position: fixed;
@@ -435,6 +434,34 @@ body {
 	background: var(--card-color);
 }
 
+.social-icons {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 16px;
+}
+
+.social-icons a {
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #AFB1B8;
+}
+
+.social-icons a:hover {
+	color: #FFFFFF;
+	border-radius: 50%;
+	overflow: hidden;
+	border: 6px solid #2196F3;
+	background-color: #2196F3;
+}
+
+.social-icons svg {
+	width: 20px;
+	height: 20px;
+}
+
 .team-card-title {
 	font-weight: 500;
 }
@@ -475,6 +502,48 @@ body {
 	color: #fff;
 	cursor: pointer;
 }
+
+
+/* REGULAR */
+.regular {
+	padding: 94px 0;
+	text-align: center;
+}
+
+.regular h2 {
+	font-size: 36px;
+	font-weight: 700;
+}
+
+.regular-cards {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 50px;
+}
+
+.regular-cards a {
+	width: 170px;
+	height: 92px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: #AFB1B8;
+	border: 1px solid #AFB1B8;
+	border-radius: 4px;
+}
+
+.regular-cards a:hover {
+	color: #2196F3;
+	border: 1px solid #2196F3;
+}
+
+.regular-cards svg {
+	width: 106px;
+	height: 60px;
+}
+
+
+
 
 /* PORTFOLIO */
 .portfolio {
@@ -570,6 +639,11 @@ body {
 	padding: 60px 0;
 }
 
+.footer-box {
+	display: flex;
+	gap: 130px;
+}
+
 .footer-contacts {
 	margin-top: 20px;
 	display: flex;
@@ -588,4 +662,44 @@ body {
 	text-decoration: none;
 	color: #fff;
 	opacity: 60%;
+}
+
+.footer-social {
+	margin-top: 15px;
+}
+
+.footer-social h3 {
+	font-size: 14px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #FFF;
+}
+
+.footer-social ul {
+	display: flex;
+	gap: 10px;
+}
+
+.footer-social a {
+	margin-top: 20px;
+	width: 44px;
+	height: 44px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: cover;
+	color: #FFF;
+	border: 1px solid rgba(255, 255, 255, 0.0);
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social a:hover {
+	color: #FFF;
+	background-color: #2196F3;
+}
+
+.footer-social svg {
+	width: 20px;
+	height: 20px;
 }
