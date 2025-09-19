@@ -62,7 +62,7 @@ body {
 }
 
 .container {
-	width: 1200px;
+	max-width: 1200px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
@@ -439,7 +439,7 @@ body {
 }
 
 .team-card {
-	flex: 1 1 20%;
+	flex: 0 1 20%;
 	border-radius: 5px;
 	overflow: hidden;
 	box-shadow: 0 0 14px 0 #ccc;
@@ -593,6 +593,7 @@ body {
 	display: flex;
 	justify-content: center;
 	gap: 8px;
+	flex-wrap: wrap;
 }
 
 .filter-buttons button {
@@ -742,4 +743,162 @@ body {
 .footer-social svg {
 	width: 20px;
 	height: 20px;
+}
+
+@media (max-width: 1350px) {
+	.header-burger,
+	.header-burger-cover {
+		display: none;
+	}
+	.header-theme {
+		display: none;
+	}
+}
+
+@media (max-width: 1200px) {
+
+	.header-menu,
+	.header-second-menu {
+		gap: 20px;
+	}
+
+	.header-menu {
+		margin-left: 40px;
+	}
+
+	/* hero */
+	.hero-inner {
+		min-height: 400px;
+	}
+
+	.hero-title {
+		font-size: 26px;
+	}
+
+	.team-card {
+		flex-basis: 46%;
+	}
+
+	.team-card-link {
+		height: 460px;
+	}
+	.portfolio-card-cover a {
+		height: 294px;
+	}
+	.regular {
+		display: none;
+	}
+	.portfolio-cards {
+		justify-content: center;
+	}
+	.portfolio {
+		padding: 60px 0;
+	}
+}
+
+@media (max-width: 992px) {
+	.header {
+	padding: 11px 0;
+	}
+
+	.header-menu,
+	.header-second-menu {
+	display: none;
+	}
+
+	.header-burger-mobile {
+	display: block;
+	width: 24px;
+	height: 16px;
+	margin-left: auto;
+	position: relative;
+	cursor: pointer;
+	}
+
+	.header-burger-mobile::before,
+	.header-burger-mobile::after,
+	.header-burger-mobile span {
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 2px;
+	background: #000;
+	}
+
+	.header-burger-mobile::after {
+	top: auto;
+	bottom: 0;
+	}
+
+	.header-burger-mobile span {
+	top: 50%;
+	transform: translateY(-50%);
+	}
+
+	.about-list > li {
+	flex-basis: 46%;
+	}
+	
+	.about-do-images article {
+	flex-basis: 46%;
+	padding: 15px;
+	}
+
+	.team-card,
+	.portfolio-card {
+		flex-basis: 46%;
+	}
+}
+
+@media (max-width: 768px) {
+
+	.about-do-images article {
+	flex-basis: 100%;
+	padding: 15px;
+	}
+
+	.about-do-images {
+		margin-top: 30px;
+	}
+	
+	.about-inner {
+		gap: 60px;
+	}
+	
+	.team-card,
+	.portfolio-card {
+		flex-basis: 100%;
+	}
+	.about,
+	.team {
+		padding: 60px 0;
+	}
+
+	.dialog {
+		max-width: 90%;
+		padding: 15px;
+	}
+
+	.about-list > li {
+	flex-basis: 100%;
+	}
+	.about-list h3 {
+		text-align: center;
+	}
+	.footer-social {
+		display: none;
+	}
+	.footer-inner {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.footer-contacts a {
+		margin: 0 auto;
+		text-align: center;
+	}
+	.filter-buttons {
+		justify-content: flex-start;
+	}
 }
